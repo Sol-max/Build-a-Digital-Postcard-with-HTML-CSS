@@ -1,0 +1,69 @@
+body {
+	background: black;
+}
+* {
+	border: 1px dashed red;
+	min-height: 10px;
+}
+p {
+	color: blue;
+}
+.postcard {
+	background: white;
+	width: 400px;
+	height: 300px;
+	margin: auto;
+}
+
+.postcard-header {
+	display: flex; /* To align the img and h1 elements horizontally */
+	justify-content: space-between; /*  create equal spacing between the elements */
+	align-items: center;
+}
+
+.postcard-header img {
+	width: 50px;
+	height: 50px;
+	margin-left: 10px;
+}
+
+.postcard-header h1 {
+	font-size: 30px; /* Change this value to adjust the font size */
+	margin: 0; /*remove any default margin on the h1 */
+}
+.postcard-body {
+	display: flex;
+	overflow: auto;
+}
+.body-left p:first-child {
+	margin-top: 0;
+}
+.body-left,
+.body-right {
+	padding: 20px;
+}
+input {
+	border: none; /* Remove all borders */
+	border-bottom: 1px solid grey; /* Add a grey bottom border */
+}
+.body-below {
+	margin-top: 10px; /* adjust this value to add more or less spacing */
+	clear: both; /* add this property to move the div below the floated element */
+	text-align: left; /* align text to the left */
+}
+.body-right {
+	width: 150px; /* adjust this value to make the box wider or narrower */
+	padding: 20px;
+}
+.left-column {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+.postcard-footer {
+	text-align: center;
+}
+button {
+	background-color: darkgrey; /* Change the color as needed */
+	padding: 10px 20px; /* Change the padding as needed */
+}
